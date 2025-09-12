@@ -6,9 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Customization</title>
+    <!-- custom breakpoints and colors -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: '600px',
+            md: '800px',
+            lg: '1200px',
+            xl: '1440px'
+          },
+          extend: {
+            colors: {
+              primary: '#ff6363',
+              secondary: '#5856d6'
+            },
+            fontSize: {
+              xxs: '0.625rem' // 10px
+            }
+          }
+        },
+      }
+    </script>
   </head>
   <body
-    class="bg-black sm:bg-green-800 md:bg-primary lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-orange-800"
+    class="bg-black sm:bg-green-800 md:bg-blue-400 lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-orange-800"
   >
     <h1 class="text-white text-xl md:text-3xl xl:text-5xl">
       Tailwind is awesome
